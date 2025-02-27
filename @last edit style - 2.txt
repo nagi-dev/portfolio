@@ -1,0 +1,649 @@
+/* Section d'accueil masthead */
+#particles-js {
+    width: 100%;
+    height: 100vh; /* Remplir toute la section d'accueil */
+    background-color: #4d4d4d;
+   z-index: -1;
+}
+
+.welcome-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white; /* Couleur du texte */
+    z-index: 10; /* Pour s'assurer que le texte est au-dessus des particules */
+}
+
+/* BARRE DE NAVIGATION */
+.navbar-nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%; 
+  gap: 0px; 
+  margin-right: 170px; 
+}
+
+.navbar-brand {
+  margin-left: 100px; 
+  margin-right: 200px; 
+}
+
+.navbar-brand {
+  color: rgba(255, 255, 255, 0.8); 
+  font-weight: bold;
+  font-size: 18px;
+  transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+}
+
+
+.navbar-brand:hover {
+  color: rgba(255, 255, 255, 1); 
+  text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.8); 
+}
+
+.navbar .navbar-brand:focus,
+.navbar .navbar-brand:active {
+  color: rgba(255, 255, 255, 0.8); 
+  text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.8); 
+}
+
+.navbar .nav-link {
+  color: rgba(255, 255, 255, 0.6); 
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+}
+
+.navbar .nav-link:hover {
+  color: rgba(255, 255, 255, 1); /* Blanc éclatant */
+  text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.8); 
+}
+
+
+.navbar.scrolled {
+  background-color: white; 
+  transition: background-color 0.3s ease-in-out;
+}
+
+.navbar.scrolled .nav-link {
+  color: rgba(0, 0, 0, 0.7); 
+}
+
+.navbar.scrolled .nav-link:hover {
+  color: black; 
+  text-shadow: none; 
+}
+
+.navbar.scrolled .navbar-brand {
+  color: black; 
+  text-shadow: none; 
+}
+
+
+
+
+
+/* SECTION CENTRAGE*/
+section:not(#contact) {
+    height: 100vh; /* Applique une hauteur de 100vh à toutes les sections SAUF #contact */
+    scroll-margin-top: 32px; 
+    position: relative;
+}
+
+
+.divider {
+  width: 60px; /* Longueur du trait */
+  height: 3px; /* Épaisseur du trait */
+  background-color: #008cd9; /* Couleur du trait */
+  margin: 8px auto; /* Espace au-dessus et en dessous */
+  border-radius: 3px; /* Arrondi les coins pour un effet design */
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 200px); /* Ajustez cette valeur selon la hauteur de votre titre */
+  padding: 20px 0;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 200px); /* Ajustez cette valeur selon la hauteur de votre titre */
+  padding: 20px 0;
+}
+
+/* LES FLECHES */
+/* Flèche vers le hard-skills*/
+.welcome-arrow .material-symbols-outlined{
+  font-size: 80px;
+  color: #fff; 
+  cursor: pointer;
+  transition: color 0.7s ease;
+  margin-top: 20px; /* Espace entre la flèche et le texte */
+  bottom: 20px; /* Espacement du bas de la page */
+  display: block; 
+  text-align: center;
+  position: absolute; 
+  left : 50%;
+  transform: translateX(-50%);
+}
+
+/* Flèche au survol */
+.welcome-arrow .material-symbols-outlined:hover {
+  color: #bbbbbb; /* Couleur au survol */
+}
+
+.arrow-down:not(.welcome-arrow) {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+.arrow-down:not(.welcome-arrow) .material-symbols-outlined {
+  font-size: 60px;
+  color: #008cd9;
+  cursor: pointer;
+  transition: color 0.7s ease;
+}
+
+.arrow-down:not(.welcome-arrow) .material-symbols-outlined:hover {
+  color: #1750b9;
+}
+
+/* Styles spécifiques pour chaque flèche */
+#hard-skills .arrow-down:not(.welcome-arrow) {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#soft-skills .arrow-down:not(.welcome-arrow) {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#formations .arrow-down:not(.welcome-arrow) {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#experiences .arrow-down:not(.welcome-arrow) {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#projects .arrow-down:not(.welcome-arrow) {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+/* Flèche vers le haut */
+.arrow-up-container {
+  display: flex;
+  justify-content: center;  
+  align-items: center;     
+  position: relative;
+  margin-top: 1px;         
+}
+
+/* Flèche */
+.arrow-up .material-symbols-outlined {
+  font-size: 60px;
+  color: #fff;     
+  cursor: pointer;
+  transition: color 0.7s ease;
+}
+
+.arrow-up .material-symbols-outlined:hover {
+  color:#008cd9;
+}
+
+
+
+/* Contenu HARD-SKILLS */
+.category-btn {
+  background: linear-gradient(45deg, #186ccd, #57c0f2);
+  color: #fff;
+  border: none;
+  padding: 15px 20px;
+  margin: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1.2em;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.category-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+#carousel-container {
+    margin: 40px auto; /* Centrage global sans décallage */
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    width: 80%;
+}
+
+/* Carousel */
+.carousel-controls .material-symbols-outlined {
+    font-size: 50px;
+    position: absolute;
+    top: 50%; /* Centre verticalement */
+    transform: translateY(-50%);
+    z-index: 10;
+    color: #186ccd;
+    cursor: pointer;
+}
+
+.carousel-controls .material-symbols-outlined:nth-child(1) {
+    left: 30%; /* Distance de la gauche */
+}
+
+.carousel-controls .material-symbols-outlined:nth-child(2) {
+    right: 30%; /* Distance de la droite */
+}
+
+.carousel-item img {
+  width: 100px; /* ou la taille que vous préférez */
+  height: 100px;
+  object-fit: contain; /* pour préserver les proportions */
+  margin: 0 auto 10px; /* centrer l'image et ajouter un espace en bas */
+}
+
+.carousel-item {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out; /* Transition de l'opacité */
+}
+
+.carousel-item.active {
+    opacity: 1; /* Rendre visible l'élément actif */
+}
+
+.arrow {
+  font-size: 40px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #186ccd;
+  cursor: pointer;
+  z-index: 10;
+  user-select: none;
+}
+
+.pagination {
+  margin-top: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.pagination .dot {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin: 0 5px;
+  background: #ddd;
+  cursor: pointer;
+}
+
+.pagination .dot.active {
+  background: #186ccd; /* Active dot */
+}
+
+
+
+/* SECTION SOFT-SKILLS*/
+#soft-skills .col-md-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 300px; /* Ajustez cette valeur selon vos besoins */
+    justify-content: center; /* Centre les éléments verticalement */
+}
+
+#soft-skills .col-md-3 h4 {
+    margin-top: 20px; /* Espace entre l'image et le titre */
+}
+
+#soft-skills .col-md-3 i {
+    margin-top: 20px; /* Espace au-dessus de l'icône */
+}
+
+#soft-skills .col-md-3 p {
+    margin-top: 10px; /* Espace entre le titre et le texte */
+    flex-grow: 1; /* Permet au texte de prendre l'espace restant */
+}
+
+
+
+
+/* SECTION FORMATIONS*/
+#formations .col-md-4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 400px; /* Ajuste cette valeur selon tes besoins */
+    justify-content: center; /* Centre les éléments verticalement */
+}
+
+#formations .col-md-4 h4 {
+    margin-top: 20px; /* Espace entre l'image et le titre */
+}
+
+#formations .col-md-4 i {
+    margin-top: 20px; /* Espace au-dessus de l'icône */
+}
+
+#formations .col-md-4 p {
+    margin-top: 10px; /* Espace entre le titre et le texte */
+    flex-grow: 1; /* Permet au texte de prendre l'espace restant */
+}
+
+
+
+
+/* SECTION EXPERIENCES*/
+#experiences .col-md-6 {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centre horizontalement */
+    text-align: center; /* Centre le texte */
+    height: 500px; /* Hauteur fixe pour tous les conteneurs (ajuste selon tes besoins) */
+    justify-content: flex-start; /* Aligne les éléments en haut du conteneur */
+}
+
+#experiences .col-md-6 i {
+    font-size: 60px; 
+    margin-bottom: 20px;
+}
+
+#experiences .col-md-6 h4 {
+    margin-bottom: 20px; 
+}
+
+#experiences .col-md-6 p {
+    flex-grow: 1; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    display: -webkit-box;
+    -webkit-line-clamp: 5; 
+    -webkit-box-orient: vertical;
+}
+
+#experiences .row {
+    margin-top: 50px; 
+}
+
+
+
+
+/* Section Projets Académiques */
+#projets-academiques .row {
+    display: flex;
+    justify-content: space-between; /* Espace les années */
+    align-items: flex-start; /* Aligne les titres en haut */
+    gap: 200px; /* Espace entre les années */
+}
+
+#projets-academiques .col-md-4 {
+    flex: 1; /* Chaque année prend une part égale de l'espace */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centre le contenu horizontalement */
+}
+
+#projets-academiques .year-section {
+    width: 100%; /* Prend toute la largeur disponible */
+}
+
+#projets-academiques .year-section h3 {
+    font-size: 1.8em;
+    color: #008cd9;
+    margin-bottom: 20px;
+    text-align: center; /* Centre le titre de l'année */
+}
+
+#projets-academiques .sae-list {
+    display: flex;
+    flex-direction: column; /* Organise les projets en colonne */
+    gap: 20px; /* Espace entre les cartes */
+    width: 100%; /* Prend toute la largeur disponible */
+}
+
+#projets-academiques .sae-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: 110%; /* Prend toute la largeur disponible */
+}
+
+#projets-academiques .sae-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+#projets-academiques .sae-card h4 {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+#projets-academiques .sae-card .btn {
+    background-color: #008cd9;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+#projets-academiques .sae-card .btn:hover {
+    background-color: #1750b9;
+}
+
+#projets-academiques .sae-subparts {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#projets-academiques .sae-subparts li {
+    margin-bottom: 10px;
+}
+
+#projets-academiques .sae-subparts li a {
+    color: #008cd9;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+#projets-academiques .sae-subparts li a:hover {
+    color: #1750b9;
+}
+
+
+
+
+/* Section Projets Personnels */
+#projets-perso .project-content {
+    margin-top: 30px;
+}
+
+#projets-perso .project-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: 100%; /* Prend toute la largeur disponible */
+    max-width: 600px; /* Limite la largeur pour un meilleur rendu */
+    margin: 0 auto; /* Centre la carte horizontalement */
+}
+
+#projets-perso .project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+#projets-perso .project-card h4 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+#projets-perso .project-card p {
+    font-size: 1.1em;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+#projets-perso .project-card .btn {
+    background-color: #008cd9;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+#projets-perso .project-card .btn:hover {
+    background-color: #1750b9;
+}
+
+
+
+
+/* Section Contact */
+#contact {
+    padding-top: 60px; /* Espace en haut de la section */
+    padding-bottom: 60px; /* Espace en bas de la section */
+    text-align: center; /* Centre tout le contenu */
+    background-color: #4d4d4d; /* Couleur de fond (gris/marron) */
+    min-height: auto; /* Supprime la hauteur minimale */
+    height: auto; /* La hauteur s'adapte au contenu */
+}
+
+#contact h2 {
+    margin-bottom: 20px; /* Espace entre le titre et le diviseur */
+}
+
+#contact .divider {
+    margin-bottom: 40px; /* Espace entre le diviseur et le texte descriptif */
+}
+
+#contact .contact-description {
+    font-size: 1em; /* Taille de la police par défaut */
+    margin-top: 180px; /* Espace entre le diviseur et le texte descriptif */
+    margin-bottom: 60px; /* Espace entre le texte et les icônes */
+}
+
+#contact .contact-icons {
+    display: flex;
+    justify-content: center; /* Centre les icônes horizontalement */
+    margin-top: 20px; /* Espace entre le texte et les icônes */
+    gap: 140px; /* Espace minimal entre les icônes */
+    width: 100%; /* Assure que le conteneur prend toute la largeur */
+    max-width: 600px; /* Réduit la largeur maximale du conteneur */
+    margin-left: auto; /* Centre le conteneur horizontalement */
+    margin-right: auto; /* Centre le conteneur horizontalement */
+}
+
+#contact .contact-item {
+    text-align: center;
+    flex: none; /* Empêche les icônes de s'étirer */
+    max-width: 100px; /* Limite la largeur de chaque icône */
+}
+
+#contact .contact-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: white; /* Texte et icônes en blanc */
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+#contact .contact-link:hover {
+    color: #008cd9; /* Couleur bleue au survol */
+    transform: translateY(-5px); /* Effet de soulèvement au survol */
+}
+
+#contact .contact-link .material-symbols-outlined {
+    font-size: 48px; /* Taille des icônes */
+    margin-bottom: 10px; /* Espace entre l'icône et le texte */
+}
+
+#contact .contact-link .fab {
+    font-size: 48px; /* Taille des icônes FontAwesome */
+    margin-bottom: 10px;
+}
+
+#contact .contact-label {
+    font-size: 1em;
+    text-decoration: none; /* Pas de soulignement par défaut */
+    font-family: inherit; /* Utilise la police par défaut du portfolio */
+    transition: text-decoration 0.3s ease; /* Transition pour le soulignement */
+    white-space: nowrap;
+}
+
+#contact .contact-link:hover .contact-label {
+    text-decoration: underline; /* Soulignement au survol */
+    text-underline-offset: 5px; /* Espace entre le texte et le soulignement */
+}
+
+/* Curseur pour le mail (fake-link) */
+#contact .fake-link {
+    cursor: pointer; /* Curseur en forme de pointeur */
+}
+
+
+
+
+
+
+
+/* Animation pour les icônes */
+.animate-icon {
+    opacity: 0; /* Icônes invisibles au départ */
+    transform: translateX(-50px); /* Décalage initial vers la gauche */
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.animate-icon.visible {
+    opacity: 1; /* Icônes visibles */
+    transform: translateX(0); /* Pas de décalage */
+}
+
+/* Délais pour l'animation */
+.animate-icon:nth-child(1) { transition-delay: 0.2s; }
+.animate-icon:nth-child(2) { transition-delay: 0.4s; }
+.animate-icon:nth-child(3) { transition-delay: 0.6s; }
+.animate-icon:nth-child(4) { transition-delay: 0.8s; }

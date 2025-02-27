@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Sid-Ahmed BOUSLAH</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome c'est pour mes icônes -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <!-- Styles personnalisés -->
+    <link href="css/style.css" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=keyboard_arrow_left,keyboard_arrow_right,keyboard_arrow_down,keyboard_double_arrow_up" />
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&display=swap" />
+
+
+
+
+</head>
+
+<body id="page-top">
+    <div id="particles-js">
+        <div class="welcome-text">
+            <h1 id="welcome-text" class="typing-effect"></h1>
+            <p class="lead">Étudiant en 3ᵉ année de génie électrique et informatique industrielle.</p>
+        </div>
+        <div class="arrow-down welcome-arrow" onclick="scrollToSection('#hard-skills')">
+            <span class="material-symbols-outlined">keyboard_arrow_down</span>
+        </div>
+    </div>
+
+<nav class="navbar navbar-expand-lg navbar-light fixed-top">
+  <div class="container">
+
+    <a class="navbar-brand" href="#page-top">Sid-Ahmed BOUSLAH</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ms-auto justify-content-between w-100"> 
+        <li class="nav-item"><a class="nav-link" href="#hard-skills">Hard Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#soft-skills">Soft Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#formations">Formations</a></li>
+        <li class="nav-item"><a class="nav-link" href="#experiences">Expériences</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projets</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+
+    <!-- Section Hard Skills -->
+    <section id="hard-skills" class="bg-light py-5">
+        <div class="container text-center">
+            <div class="title">
+                <h2 class="section-heading">Hard Skills</h2>
+            </div>
+            <div class="divider"></div>
+           <div class="content">
+              <div class="categories">
+                <button class="category-btn" data-category="langages">Langages/Framework</button>
+                <button class="category-btn" data-category="outils">Outils</button>
+                <button class="category-btn" data-category="os">Systèmes d'exploitation</button>
+                <button class="category-btn" data-category="langues">Langues</button>
+                <button class="category-btn" data-category="autres">Autres</button>
+              </div>
+          <div id="carousel-container">
+              <div id="carousel-content" class="carousel"></div>
+
+              <div class="carousel-controls">
+                <span class="material-symbols-outlined">keyboard_arrow_left</span>
+                <span class="material-symbols-outlined">keyboard_arrow_right</span>
+              </div>
+              <div class="pagination"></div>
+            </div>
+           </div>
+
+        <div class="arrow-down hard-skills-arrow" onclick="scrollToSection('#soft-skills')">
+            <span class="material-symbols-outlined">keyboard_arrow_down</span>
+        </div>
+    </section>
+
+    <!-- Section Soft Skills -->
+    <section id="soft-skills" class="bg-dark text-light py-5">
+        <div class="container text-center">
+            <h2 class="section-heading">Soft Skills</h2>
+            <div class="divider"></div>
+            <p class="lead">Mes qualités personnelles et professionnelles.</p>
+            <div class="row">
+                <div class="col-md-3">
+                     <i class="fas fa-lightbulb fa-4x text-primary animate-icon"></i>
+                    <h4>Autonome</h4>
+                    <p class=>Je sais travailler seul sur un projet, en recherchant si nécessaire les notions que je ne connais pas.</p>
+                </div>
+                <div class="col-md-3">
+                    <i class="fas fa-cogs fa-4x text-primary animate-icon"></i>
+                    <h4>Adaptabilité</h4>
+                    <p class=>Je peux m'adapter rapidement à une équipe, aux nouveaux logiciels, et aux missions qui me sont données.</p>
+                </div>
+                <div class="col-md-3">
+                    <i class="fas fa-comments fa-4x text-primary animate-icon"></i>
+                    <h4>Rigoureux</h4>
+                    <p class=>Je suis attentif aux détails et m'efforce de maintenir un niveau de qualité élevé dans tout ce que j'entreprends.</p>
+                </div>
+                <div class="col-md-3">
+                    <i class="fas fa-users fa-4x text-primary animate-icon"></i>
+                    <h4>Travail d'équipe</h4>
+                    <p class=>Je crois en la force de la collaboration et je suis capable de communiquer efficacement avec mes collègues pour atteindre des objectifs communs.</p>
+                </div>
+            </div>
+        </div>
+        <div class="arrow-down soft-skills-arrow" onclick="scrollToSection('#formations')">
+            <span class="material-symbols-outlined">keyboard_arrow_down</span>
+        </div>
+    </section>
+
+    <!-- Section Formations -->
+    <section id="formations" class="bg-light py-5">
+        <div class="container text-center">
+            <h2 class="section-heading">Formations</h2>
+            <div class="divider"></div>
+            <p class="lead">Mon parcours académique.</p>
+            <div class="row">
+                <div class="col-md-4">
+                    <i class="fas fa-4x fa-microscope text-primary animate-icon"></i>
+                    <h4>Bac STI2D</h4>
+                    <p>J'ai obtenu mon Bac STI2D option SIN (Systèmes d'Information et Numérique) au lycée Adolphe Chérioux. Cette option m'a permis de découvrir les bases de la programmation, de l'électronique et des réseaux informatiques. J'ai choisi cette voie car elle offrait une approche concrète et technique, idéale pour développer ma passion pour l'informatique et les nouvelles technologies. Les projets réalisés m'ont confirmé mon intérêt pour les métiers de l'ingénierie.</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="fas fa-4x fa-laptop text-primary animate-icon"></i>
+                    <h4>CPGE</h4>
+                    <p>Après le bac, j'ai intégré une prépa TSI au lycée Raspail. Cette année de prépa m'a apporté une solide base en mathématiques et en sciences de l'ingénieur. Cependant, j'ai réalisé que l'approche théorique et abstraite de la prépa ne correspondait pas à mon besoin de pratique et de concret. J'ai donc décidé de me réorienter vers une formation plus professionnalisante.</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="fas fa-4x fa-microchip text-primary animate-icon"></i>
+                    <h4>BUT GEII</h4>
+                    <p>Actuellement, je suis en BUT GEII option ESE (Électronique et Systèmes Embarqués) à l'IUT de Créteil/Vitry. Cette formation me permet de développer des compétences techniques pointues dans les domaines de l'électronique, de l'automatisme et de l'informatique industrielle. J'apprécie particulièrement l'équilibre entre les cours théoriques et les projets pratiques, qui me permettent d'appliquer directement les connaissances acquises et de développer mon autonomie et mon esprit d'initiative.</p>
+                </div>
+            </div>
+        </div>
+        <div class="arrow-down formations-arrow" onclick="scrollToSection('#experiences')">
+            <span class="material-symbols-outlined">keyboard_arrow_down</span>
+        </div>
+    </section>
+
+    <!-- Section Expériences -->
+    <section id="experiences" class="bg-dark text-light py-5">
+        <div class="container text-center">
+            <h2 class="section-heading">Expériences</h2>
+            <div class="divider"></div>
+            <p class="lead">Mes expériences professionnelles.</p>
+            <div class="row">
+                <div class="col-md-6">
+                    <i class="fas fa-code fa-4x text-primary animate-icon"></i>
+                    <h4>Stage au Laboratoire CERTES</h4>
+                    <p>Durant mon stage de 8 semaines au laboratoire CERTES, j'ai activement participé à un projet de recherche en collaboration avec un chercheur. J'ai réalisé des tâches techniques spécifiques, incluant la programmation et l'analyse de données. J'ai également implémenté des algorithmes d'analyse de données météorologiques et développé une interface utilisateur pour faciliter l'interprétation des données par l'équipe. Cette expérience a renforcé mes compétences en programmation, en analyse de données et en travail d'équipe dans un contexte de recherche stimulant.</p>
+                </div>
+                <div class="col-md-6">
+                    <i class="fas fa-truck fa-4x text-primary animate-icon"></i>
+                    <h4>Agent de suivi chez Chronopost</h4>
+                    <p>En tant qu'agent de suivi chez Chronopost pendant un mois, j'ai été responsable du suivi des colis et de la numérisation des informations. Cette expérience m'a permis de développer ma rigueur, mon sens de l'organisation et ma capacité à travailler efficacement dans un environnement dynamique. J'ai également appris à gérer les imprévus et à respecter les délais, des compétences essentielles dans le monde professionnel.</p>
+                </div>
+            </div>
+        </div>
+        <div class="arrow-down experiences-arrow" onclick="scrollToSection('#projects')">
+            <span class="material-symbols-outlined">keyboard_arrow_down</span>
+        </div>
+    </section>
+
+    <!-- Section Projets --> 
+<section id="projects" class="bg-light py-5">
+    <div class="container text-center">
+        <div class="title">
+            <h2 class="section-heading">Projets</h2>
+        </div>
+        <div class="divider"></div>
+        <div class="content">
+            <!-- Boutons de filtrage -->
+            <div class="categories">
+                <button class="category-btn" id="btn-projets-perso">Projets Perso</button>
+                <button class="category-btn" id="btn-projets-academiques">Projets Académiques</button>
+            </div>
+
+            <div id="projets-perso" class="project-content" style="display: none;">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="project-card">
+                            <h4>Chat en Ligne</h4>
+                            <p>J'ai développé un chat interactif en temps réel pour communiquer avec n'importe qui, n'importe où.</p>
+                            <a href="http://89.168.55.51:3006/" class="btn btn-primary" target="_blank">Visiter le Site</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="projets-academiques" class="project-content" style="display: none;">
+                <div class="row">
+
+                    <!-- 1ère Année -->
+                    <div class="col-md-4">
+                        <div class="year-section">
+                            <h3>1ère Année de BUT</h3>
+                            <div class="sae-list">
+                                <!-- SAÉ 1.01 -->
+                                <div class="sae-card">
+                                    <h4>SAÉ 1.01 : Conception d’une carte électronique</h4>
+                                    <a href="https://drive.google.com/file/d/13oNklDZ-iMLD4pR6J9kTraFunw_HK6mX/view?usp=sharing" class="btn btn-primary" target="_blank">Voir le Compte Rendu</a>
+                                </div>
+                                <!-- SAÉ 1.02 -->
+                                <div class="sae-card">
+                                    <h4>SAÉ 1.02 : CNA et CAN</h4>
+                                    <a href="https://drive.google.com/file/d/1yiPz_UEVugl620WXP9Y6tprYm1jzC3di/view?usp=sharing" class="btn btn-primary" target="_blank">Voir le Compte Rendu</a>
+                                </div>
+                                <!-- SAÉ 2.01 -->
+                                <div class="sae-card">
+                                    <h4>SAÉ 2.01 : Étude et Conception d’un Robot Mobile</h4>
+                                    <a href="https://drive.google.com/file/d/1osNjYyUM6pp8FS4WhSccUvsO9Ntardum/view?usp=sharing" class="btn btn-primary" target="_blank">Voir le Compte Rendu</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2ème Année -->
+                    <div class="col-md-4">
+                        <div class="year-section">
+                            <h3>2ème Année de BUT</h3>
+                            <div class="sae-list">
+                                <!-- SAÉ 3.01 -->
+                                <div class="sae-card">
+                                    <h4>SAÉ 3.01 : Étude d’un oscilloscope numérique</h4>
+                                    <a href="https://drive.google.com/file/d/1roohAlCcdESLYsFQaMyxOnbWrqa4qP1o/view?usp=sharing" class="btn btn-primary" target="_blank">Voir le Compte Rendu</a>
+                                </div>
+                                <!-- SAÉ 4.02 -->
+                                <div class="sae-card">
+                                    <h4>SAÉ 4.02 : Technologies et standards de l'IoT</h4>
+                                    <a href="https://drive.google.com/file/d/1uL8gvYLo21PSkU0aDrY8Or3D49_3L9Sc/view?usp=sharing" class="btn btn-primary" target="_blank">Voir le Compte Rendu</a>
+                                </div>
+                                <!-- SAÉ 3.02 avec sous-parties -->
+                                <div class="sae-card">
+                                    <h4>SAÉ 3.02 : Maintenance</h4>
+                                    <p>Cette SAÉ est divisée en 3 parties :</p>
+                                    <ul class="sae-subparts">
+                                        <li><a href="https://drive.google.com/drive/folders/15XJtixKIKJTB2XNHemXINYA7uBFc2zAg?usp=sharing" target="_blank">Maintenance Préventive</a></li>
+                                        <li><a href="https://drive.google.com/drive/folders/1l-KC_SKPlYniLtfzKjdaRrcPX1c_cj-O?usp=sharing" target="_blank">Maintenance Corrective</a></li>
+                                        <li><a href="https://drive.google.com/drive/folders/1_AfPTGfbgHXdGLZGO_lZf-ajpMZVXAkJ?usp=sharing" target="_blank">Maintenance Améliorative</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 3ème Année -->
+                    <div class="col-md-4">
+                        <div class="year-section">
+                            <h3>3ème Année de BUT</h3>
+                            <div class="sae-list">
+                                <!-- SAÉ 5.01 -->
+                                <div class="sae-card">
+                                    <h4>SAÉ 5.01 : Implémentation d’un Système Embarqué Temps Réel sur STM32</h4>
+                                    <a href="https://drive.google.com/file/d/14KfuWkSHCNnsh8F02tdWpwzFEp2hr8o3/view?usp=sharing" class="btn btn-primary" target="_blank">Voir le Compte Rendu</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+  <div class="arrow-down projets-arrow" onclick="scrollToSection('#contact')">
+    <span class="material-symbols-outlined">keyboard_arrow_down</span>
+  </div>
+</section>
+
+    <!-- Section Contact -->
+<section id="contact" class="bg-dark text-light py-5">
+
+     <div class="container text-center">
+        <h2>Contact</h2>
+        <div class="divider"></div>
+        <div class="contact-content">
+            <p class="contact-description">Si vous êtes intéressé(e) par mon profil, n'hésitez pas à me contacter en utilisant les coordonnées ci-dessous.</p>
+
+            <div class="contact-icons">
+                <!-- Mail -->
+                <div class="contact-item">
+                    <div class="contact-link fake-link"> 
+                        <span class="material-symbols-outlined">alternate_email</span> 
+                        <span class="contact-label">sidahmedbouslah@gmail.com</span>
+                    </div>
+                </div>
+
+                <!-- CV -->
+                <div class="contact-item">
+                    <a href="dl/MonCV.pdf" download class="contact-link">
+                        <span class="material-symbols-outlined">description</span> 
+                        <span class="contact-label">CV</span>
+                    </a>
+                </div>
+                
+                <!-- LinkedIn -->
+                <div class="contact-item">
+                    <a href="https://www.linkedin.com/in/ahmed-bouslah/" target="_blank" class="contact-link">
+                        <span class="fab fa-linkedin"></span> 
+                        <span class="contact-label">Sid-Ahmed BOUSLAH</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Flèche vers le haut 
+   <div class="arrow-up-container">
+        <div class="arrow-up" onclick="scrollToTop()">
+    <span class="material-symbols-outlined">keyboard_double_arrow_up</span>
+        </div>
+   </div>-->
+</section>
+
+
+    
+    <footer class="text-center py-3 bg-dark text-light">
+        <p>&copy; Sid-Ahmed BOUSLAH 2025</p>
+    </footer>
+
+
+
+
+<!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+  <script src="js/script.js"></script>
+  <script src="js/animation.js"></script>
+
+  <script src="js/particles.js"></script>
+  <script src="js/app.js"></script>
+
+</body>
+</html>
